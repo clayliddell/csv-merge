@@ -39,7 +39,7 @@ pipenv run ./csv-merge.py -h
 The script can be run as follows:
 
 ```sh
-python3 ./csv-merge.py file_1.csv file_2.csv file_3.csv... -o file_combined.csv
+python3 ./csv-merge.py file_1.csv file_2.csv file_n.csv... -o file_combined.csv
 ```
 
 ## Help!
