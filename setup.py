@@ -8,8 +8,11 @@ setup(
     author_email='account+github@clayliddell.com',
     url='https://github.com/clayliddell/csv-merge',
     license='MIT',
-    packages=find_packages(exclude=['main', 'tests', 'tests.*']),
+    packages=['csvmerge'],
     install_requires=[
         'pandas>=1.3.0',
     ],
+    entry_points = {
+        'console_scripts': ['csvmerge=csvmerge.__main__:main'],
+    },
 )
