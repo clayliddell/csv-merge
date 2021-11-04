@@ -13,25 +13,15 @@ Python 3 (version 3.6 or greater) is required to run this project.
 
 ## Installation
 
-You can either install the scripts required dependencies globally:
+You can install the script using:
 
 ```sh
-python3 -m pip install -r requirements.txt
+python3 setup.py install
 ```
+
 And run it using:
 ```sh
-python3 ./csv-merge.py -h
-```
-
-Or you can use Pipenv for dependency management:
-
-```sh
-python3 -m pip install --user pipenv
-pipenv install
-```
-And run it using:
-```sh
-pipenv run ./csv-merge.py -h
+csv-merge -h
 ```
 
 ## Usage
@@ -39,12 +29,12 @@ pipenv run ./csv-merge.py -h
 The script can be run as follows:
 
 ```sh
-python3 ./csv-merge.py file_1.csv file_2.csv file_n.csv... -o file_combined.csv
+csv-merge file_1.csv file_2.csv file_n.csv... > file_combined.csv
 ```
 
 ## Help!
 
 The command has an easy to access help menu using the `-h` option:
 ```sh
-python3 ./csv-merge.py -h
+csv-merge -h
 ```
